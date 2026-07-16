@@ -30,7 +30,7 @@
       <div class="nav-links" id="nav-links">
         <a href="#work">Work</a>
         <a href="#experience">Experience</a>
-        <a href="#project">Project</a>
+        <a href="#projects">Projects</a>
         <a href="#skills">Skills</a>
         <a href="assets/Sam-McDevitt-Resume.pdf" target="_blank" rel="noopener">Resume</a>
         <a href="#contact" class="nav-cta">Contact</a>
@@ -235,19 +235,26 @@
       </div>
     </section>
 
-    <!-- ============ FEATURED PROJECT ============ -->
-    <section class="section" id="project">
+    <!-- ============ FEATURED PROJECTS ============ -->
+    <section class="section" id="projects">
       <div class="container">
         <header class="section-head reveal">
-          <p class="eyebrow">Featured Project</p>
-          <h2>Secure Medical RAG Pipeline</h2>
+          <p class="eyebrow">Featured Projects</p>
+          <h2>Built, shipped, and running</h2>
           <p class="section-lede">
-            Agentic, access-controlled, federated retrieval-augmented generation over live
-            PubMed — air-gap-capable, exposed over MCP. Hand-built, no LLM framework.
+            Personal systems I design, deploy, and operate end to end — one live in
+            production right now, both open on GitHub.
           </p>
         </header>
 
         <div class="project-panel reveal">
+          <div class="project-head">
+            <h3>Secure Medical RAG Pipeline</h3>
+            <p>
+              Agentic, access-controlled, federated retrieval-augmented generation over
+              live PubMed — air-gap-capable, exposed over MCP. Hand-built, no LLM framework.
+            </p>
+          </div>
           <div class="project-main">
             <ul class="project-points">
               <li>
@@ -279,7 +286,9 @@
                 the real index.
               </li>
             </ul>
-            <a class="btn btn-primary" href="https://github.com/sammcdsam/medical-rag-pipeline" target="_blank" rel="noopener">View on GitHub ↗</a>
+            <div class="project-actions">
+              <a class="btn btn-primary" href="https://github.com/sammcdsam/medical-rag-pipeline" target="_blank" rel="noopener">View on GitHub ↗</a>
+            </div>
           </div>
           <aside class="project-side">
             <h4>Stack</h4>
@@ -295,6 +304,67 @@
               <li>27K PubMed abstracts</li>
               <li>34K indexed chunks</li>
               <li>0 frameworks</li>
+            </ul>
+          </aside>
+        </div>
+
+        <div class="project-panel reveal">
+          <div class="project-head">
+            <h3>College Baseball Predictor</h3>
+            <p>
+              NCAA Division I win-probability and analytics platform — twelve stacked
+              models behind a self-hosted dashboard that runs live all season.
+            </p>
+          </div>
+          <div class="project-main">
+            <ul class="project-points">
+              <li>
+                <strong>Twelve models and a meta-learner, not one big net.</strong>
+                Elo, Pythagorean, Poisson, LightGBM, XGBoost, a neural model, and
+                situational models (venue, rest/travel, upset) feed an XGBoost
+                meta-ensemble — lifting accuracy from 64.8% to 77.8% and Brier score
+                from 0.231 to 0.155 on a 634-game replay cohort.
+              </li>
+              <li>
+                <strong>Leakage treated as a first-class threat.</strong>
+                Every prediction is provenance-tagged (live vs. refresh vs. backfill) and
+                excluded from training if it wasn't truly pregame; features are as-of
+                clean, and retraining is strict chronological walk-forward — no random
+                holdouts anywhere.
+              </li>
+              <li>
+                <strong>Calibrated, not just accurate.</strong>
+                A canonical benchmark harness reports Brier, log loss, and expected
+                calibration error (0.112 → 0.058), and closing-line-value tracking scores
+                every prediction against the market's final answer.
+              </li>
+              <li>
+                <strong>Live in production every game day.</strong>
+                Automated ingestion from StatBroadcast, SIDEARM, and ESPN — runners,
+                counts, live win probability — on scheduled pipelines, with a Flask
+                dashboard self-hosted behind a Cloudflare Tunnel.
+              </li>
+            </ul>
+            <div class="project-actions">
+              <a class="btn btn-primary" href="https://baseball.mcdevitt.page" target="_blank" rel="noopener">Visit live dashboard ↗</a>
+              <a class="btn btn-ghost" href="https://github.com/sams-claude-bot/college-baseball-predictor" target="_blank" rel="noopener">View on GitHub ↗</a>
+            </div>
+          </div>
+          <aside class="project-side">
+            <h4>Stack</h4>
+            <ul class="side-list">
+              <li>Python</li>
+              <li>LightGBM · XGBoost</li>
+              <li>Flask · SQLite</li>
+              <li>Cloudflare Tunnel</li>
+              <li>Cron pipelines</li>
+            </ul>
+            <h4>By the numbers</h4>
+            <ul class="side-list mono-list">
+              <li>12 base models</li>
+              <li>634-game eval cohort</li>
+              <li>+13 pts accuracy</li>
+              <li>0.058 ECE</li>
             </ul>
           </aside>
         </div>
