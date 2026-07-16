@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Sam McDevitt — Resume</title>
+<style>
+  @page { size: letter; margin: 0.55in 0.6in; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 9.6pt;
+    line-height: 1.38;
+    color: #16191D;
+  }
+  h1 {
+    font-size: 20pt;
+    letter-spacing: 0.04em;
+    margin-bottom: 2pt;
+  }
+  .contact {
+    font-size: 9pt;
+    color: #444;
+    margin-bottom: 10pt;
+  }
+  h2 {
+    font-size: 10.5pt;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #D6491B;
+    border-bottom: 1.2pt solid #16191D;
+    padding-bottom: 2pt;
+    margin: 11pt 0 6pt;
+  }
+  .role {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-top: 7pt;
+  }
+  .role h3 { font-size: 10pt; }
+  .role .org { font-weight: normal; }
+  .dates {
+    font-size: 8.8pt;
+    color: #444;
+    white-space: nowrap;
+  }
+  ul { margin: 2pt 0 0 14pt; }
+  li { margin-bottom: 1.5pt; }
+  .summary { margin-bottom: 2pt; }
+  .clearance { font-size: 9pt; margin-top: 4pt; }
+  .proj-sub { font-size: 9pt; color: #444; margin-bottom: 2pt; }
+  .skills p { margin-bottom: 2.5pt; }
+  .skills b { color: #16191D; }
+  a { color: inherit; text-decoration: none; }
+</style>
+</head>
+<body>
+
+<h1>SAM McDEVITT</h1>
+<p class="contact">
+  Nashville, TN &nbsp;|&nbsp; 601-668-6782 &nbsp;|&nbsp; sam@mcdevitt.page &nbsp;|&nbsp;
+  linkedin.com/in/sammcdevitt &nbsp;|&nbsp; github.com/sammcdsam
+</p>
+
+<h2>Summary</h2>
+<p class="summary">
+Machine learning engineer with 4+ years building and shipping production ML systems — computer vision,
+multi-modal sensor fusion, and generative AI — on a foundation of safety-critical embedded software
+engineering. Own the full lifecycle: data pipelines, model development in PyTorch/TensorFlow, evaluation,
+and deployment to AWS and edge hardware. Recent focus on LLM systems, including an agentic,
+access-controlled RAG platform served over MCP. Repeated record of shipping high-accuracy models in
+regulated environments (healthcare, DHS, DoD).
+</p>
+<p class="clearance">
+<b>Clearances:</b> U.S. Secret (previously held — Boeing/Dynetics) &nbsp;|&nbsp; DHS (previously held —
+CBP contract); eligible for reinstatement
+</p>
+
+<h2>Experience</h2>
+
+<div class="role">
+  <h3>AI Metrics <span class="org">— Lead AI/ML Engineer</span></h3>
+  <span class="dates">June 2025 – Present</span>
+</div>
+<ul>
+  <li>Led modernization of the company's core AI codebase — selected the target framework, designed the migration strategy, and improved segmentation Dice scores and regression R² over the legacy baseline.</li>
+  <li>Cut required radiologist corrections by 20% through improvements to a production classification model, directly reducing clinical review burden.</li>
+  <li>Architected AWS infrastructure for distributed hyperparameter tuning of segmentation and localization models on CT/MRI imaging data in a regulated healthcare environment.</li>
+  <li>Built production preprocessing pipelines — normalization, augmentation, ROI extraction — across multi-modal medical datasets.</li>
+  <li>Translated clinical and regulatory requirements into model acceptance criteria with physician and business stakeholders.</li>
+</ul>
+
+<div class="role">
+  <h3>Analytical AI <span class="org">— Senior AI/ML Engineer</span></h3>
+  <span class="dates">May 2023 – May 2025</span>
+</div>
+<ul>
+  <li>Designed and deployed a production computer-vision system (detection + model ensembling) for U.S. Customs and Border Protection that scored 98.9% on the government's technical challenge — the direct basis for a $25M, 5-year production contract award.</li>
+  <li>Led prototype development for two U.S. Air Force SBIR contracts ($2.5M combined); both demos secured follow-on production deployments.</li>
+  <li>Built a cloud-native AWS pipeline fusing multi-modal inputs — X-ray imagery, structured text, vehicle records — deployed for live government field trials.</li>
+  <li>Owned the full model lifecycle, proof-of-concept through production, for vehicle-region segmentation paired with anomaly classification.</li>
+  <li>Optimized object-detection models for real-time edge inference and AWS cloud training/evaluation across camera, X-ray, and CT modalities.</li>
+  <li>Engineered a real-time sensor-fusion system integrating Intel depth cameras with radiation detectors for source-carrier attribution and tracking.</li>
+  <li>Built explainability into the deployment pipeline (Grad-CAM, RISE, hierarchical occlusion) to validate model behavior and drive adoption by non-technical field operators.</li>
+  <li>Implemented model versioning, performance monitoring, and CI/CD for production ML; mentored junior engineers on MLOps practices.</li>
+</ul>
+
+<div class="role">
+  <h3>Boeing <span class="org">— Software Engineer, Advanced Development &amp; Prototype Systems</span></h3>
+  <span class="dates">Aug 2022 – May 2023</span>
+</div>
+<ul>
+  <li>Developed and verified mission-critical embedded algorithms for PAC-3 (Patriot) missile seeker systems in Ada, VHDL, and MATLAB.</li>
+  <li>Owned requirements engineering, verification testing, and documentation in a safety-critical, highly regulated defense environment.</li>
+</ul>
+
+<div class="role">
+  <h3>Dynetics <span class="org">— Computer Engineer III</span></h3>
+  <span class="dates">Aug 2021 – Aug 2022</span>
+</div>
+<ul>
+  <li>Developed and tested VHDL for satellite communications systems; contributed to a hypersonic missile software program.</li>
+  <li>Built a Kalman-filter-based control system in Python for a seeker testbed.</li>
+</ul>
+
+<div class="role">
+  <h3>Mississippi State University <span class="org">— Graduate Research Assistant, Sensor Lab</span></h3>
+  <span class="dates">Aug 2020 – Aug 2021</span>
+</div>
+<ul>
+  <li>Built CNN segmentation models in TensorFlow/Keras for autonomous-driving perception.</li>
+  <li>Developed multi-modal sensor fusion (camera, LiDAR, depth) for ROS-based autonomous vehicle demonstrations.</li>
+</ul>
+
+<h2>Projects</h2>
+
+<div class="role">
+  <h3>Secure Medical RAG Pipeline</h3>
+  <span class="dates">github.com/sammcdsam/medical-rag-pipeline</span>
+</div>
+<p class="proj-sub">Agentic, access-controlled, federated RAG over live PubMed — air-gap-capable, exposed over MCP · Python</p>
+<ul>
+  <li>Built an agentic RAG loop (Claude) over 27K live PubMed abstracts (34K chunks) that decomposes multi-hop questions and reformulates its own queries — with the caller's clearance bound so the agent cannot escalate its own access, making retrieval resistant to prompt injection from retrieved text.</li>
+  <li>Enforced need-to-know access control as a vector-store pre-filter (unauthorized documents never reach the model) with an append-only audit log; federated retrieval across governed silos with two-level authorization and provenance-tagged, distance-merged results.</li>
+  <li>Exposed the access-controlled retriever as an MCP server callable from any MCP client with caller clearance still enforced; pluggable generation layer (Claude API or fully local Ollama, zero code change) for air-gapped deployment.</li>
+  <li>Hand-built chunking, retrieval, and citation with no LLM framework, over local-GPU bge-small embeddings and ChromaDB; label-free eval harness (Precision@k, nDCG@k, LLM-judge faithfulness) used to reject a reranker that failed to beat the bi-encoder baseline, plus a pytest suite verifying access controls hold on the real index.</li>
+</ul>
+
+<h2>Education</h2>
+<div class="role">
+  <h3>Mississippi State University <span class="org">— M.S., Electrical &amp; Computer Engineering</span></h3>
+  <span class="dates">2020 – 2022 &nbsp;|&nbsp; GPA 3.80</span>
+</div>
+<div class="role">
+  <h3>Mississippi State University <span class="org">— B.S., Computer Engineering</span></h3>
+  <span class="dates">2016 – 2020 &nbsp;|&nbsp; GPA 3.83</span>
+</div>
+
+<h2>Publications</h2>
+<p>
+McDevitt S, et al. "Wearables for Biomechanical Performance Optimization and Risk Assessment in
+Industrial and Sports Applications." <i>Bioengineering</i> (Basel), 2022.
+</p>
+
+<h2>Technical Skills</h2>
+<div class="skills">
+  <p><b>AI/ML:</b> PyTorch, TensorFlow/Keras, computer vision (object detection, segmentation, ensembling), anomaly detection, sensor fusion, transformers, explainable AI (Grad-CAM, RISE)</p>
+  <p><b>GenAI &amp; RAG:</b> LLMs, retrieval-augmented generation, agentic systems, MCP, embeddings &amp; vector search (ChromaDB), LLM evaluation (Precision@k, nDCG, LLM-as-judge), prompt-injection defense, Claude API, Ollama</p>
+  <p><b>Cloud &amp; MLOps:</b> AWS (EC2, S3, SageMaker), Docker, CI/CD, model versioning &amp; monitoring, FastAPI, GPU inference, edge &amp; air-gapped deployment</p>
+  <p><b>Languages &amp; Data:</b> Python, C++, SQL, C, MATLAB; NumPy, Pandas, scikit-learn, OpenCV, ETL &amp; data-pipeline design</p>
+</div>
+
+</body>
+</html>

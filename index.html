@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sam McDevitt — Machine Learning Engineer</title>
+  <meta name="description" content="Sam McDevitt is a machine learning engineer in Nashville, TN building production ML systems — computer vision, sensor fusion, and LLM/RAG platforms — for healthcare, DHS, and DoD.">
+  <meta property="og:title" content="Sam McDevitt — Machine Learning Engineer">
+  <meta property="og:description" content="Production ML for systems that can't fail: computer vision, sensor fusion, and secure LLM systems in regulated environments.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Primary">
+      <a class="nav-brand" href="#top">
+        <span class="brand-mark" aria-hidden="true"></span>
+        S.&thinsp;McDevitt
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Menu">
+        <span></span><span></span>
+      </button>
+      <div class="nav-links" id="nav-links">
+        <a href="#work">Work</a>
+        <a href="#experience">Experience</a>
+        <a href="#project">Project</a>
+        <a href="#skills">Skills</a>
+        <a href="assets/Sam-McDevitt-Resume.pdf" target="_blank" rel="noopener">Resume</a>
+        <a href="#contact" class="nav-cta">Contact</a>
+        <button class="theme-toggle" aria-label="Toggle color theme" title="Toggle theme">
+          <svg class="icon-sun" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.9 4.9l1.4 1.4m11.4 11.4 1.4 1.4M2 12h2m16 0h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/></svg>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="top">
+      <canvas id="hero-canvas" aria-hidden="true"></canvas>
+      <div class="container hero-inner">
+        <p class="eyebrow reveal">Machine Learning Engineer · Nashville, TN</p>
+        <h1 class="hero-title reveal">Production ML for systems<br>that can’t fail.</h1>
+        <p class="hero-lede reveal">
+          I’m Sam McDevitt. For 4+ years I’ve built and shipped machine learning in
+          regulated, high-stakes environments — computer vision and sensor fusion for
+          DHS and DoD, medical imaging models in healthcare, and secure agentic LLM
+          systems — on a foundation of safety-critical embedded engineering.
+        </p>
+        <div class="hero-actions reveal">
+          <a class="btn btn-primary" href="mailto:sam@mcdevitt.page">Get in touch</a>
+          <a class="btn btn-ghost" href="https://github.com/sammcdsam" target="_blank" rel="noopener">GitHub</a>
+          <a class="btn btn-ghost" href="https://linkedin.com/in/sammcdevitt" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+        <dl class="stat-row reveal">
+          <div class="stat">
+            <dt>CBP technical challenge score</dt>
+            <dd>98.9<span class="stat-unit">%</span></dd>
+          </div>
+          <div class="stat">
+            <dt>Production contract my system won</dt>
+            <dd>$25<span class="stat-unit">M</span></dd>
+          </div>
+          <div class="stat">
+            <dt>Reduction in radiologist corrections</dt>
+            <dd>20<span class="stat-unit">%</span></dd>
+          </div>
+          <div class="stat">
+            <dt>Years shipping production ML</dt>
+            <dd>4<span class="stat-unit">+</span></dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- ============ SELECTED WORK ============ -->
+    <section class="section" id="work">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow">Selected Work</p>
+          <h2>Systems in the field, not the lab</h2>
+          <p class="section-lede">Deployed for government field trials, clinical review pipelines, and live operations — each one owned from data pipeline to production.</p>
+        </header>
+
+        <div class="work-grid">
+          <article class="work-card reveal">
+            <p class="work-tag">U.S. Customs &amp; Border Protection</p>
+            <h3>Cargo &amp; vehicle anomaly detection</h3>
+            <p>
+              Designed and deployed a production computer-vision system — detection plus
+              model ensembling over X-ray, camera, and CT modalities — that scored
+              <strong>98.9%</strong> on the government’s technical challenge and became the
+              direct basis for a <strong>$25M, five-year production contract</strong>.
+              Fused X-ray imagery, structured text, and vehicle records in a cloud-native
+              AWS pipeline for live field trials.
+            </p>
+            <ul class="work-meta">
+              <li>PyTorch</li><li>Ensembling</li><li>AWS</li><li>Edge inference</li>
+            </ul>
+          </article>
+
+          <article class="work-card reveal">
+            <p class="work-tag">Medical Imaging · AI Metrics</p>
+            <h3>Clinical CT/MRI segmentation &amp; classification</h3>
+            <p>
+              Led modernization of the company’s core AI codebase — framework selection,
+              migration strategy, and measurable gains in segmentation Dice and regression
+              R² over the legacy baseline. Improved a production classifier to cut required
+              radiologist corrections by <strong>20%</strong>, and architected AWS
+              infrastructure for distributed hyperparameter tuning in a regulated
+              healthcare environment.
+            </p>
+            <ul class="work-meta">
+              <li>Segmentation</li><li>CT / MRI</li><li>AWS</li><li>Regulated ML</li>
+            </ul>
+          </article>
+
+          <article class="work-card reveal">
+            <p class="work-tag">Real-time Sensor Fusion</p>
+            <h3>Radiation source-carrier attribution</h3>
+            <p>
+              Engineered a real-time system fusing Intel depth cameras with radiation
+              detectors to attribute and track radioactive sources to their carriers.
+              Built explainability into the deployment pipeline — Grad-CAM, RISE,
+              hierarchical occlusion — so non-technical field operators could trust and
+              adopt the models.
+            </p>
+            <ul class="work-meta">
+              <li>Depth + radiation</li><li>Tracking</li><li>Explainable AI</li>
+            </ul>
+          </article>
+
+          <article class="work-card reveal">
+            <p class="work-tag">U.S. Air Force · SBIR</p>
+            <h3>Prototypes that won production</h3>
+            <p>
+              Led prototype development for two U.S. Air Force SBIR contracts —
+              <strong>$2.5M combined</strong> — and both demos secured follow-on production
+              deployments. Owned the full model lifecycle: proof-of-concept, vehicle-region
+              segmentation paired with anomaly classification, through production with
+              versioning, monitoring, and CI/CD.
+            </p>
+            <ul class="work-meta">
+              <li>Rapid prototyping</li><li>MLOps</li><li>CI/CD</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EXPERIENCE ============ -->
+    <section class="section section-alt" id="experience">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow">Experience</p>
+          <h2>From missile seekers to medical AI</h2>
+          <p class="section-lede">A deliberate arc: safety-critical embedded systems first, production machine learning built on top of that discipline.</p>
+        </header>
+
+        <ol class="timeline">
+          <li class="timeline-item reveal">
+            <p class="timeline-date">Jun 2025 — Present</p>
+            <div class="timeline-body">
+              <h3>Lead AI/ML Engineer <span class="at">· AI Metrics</span></h3>
+              <p>
+                Leading the modernization of the core medical-imaging AI codebase and the
+                team’s ML practice. Production preprocessing pipelines across multi-modal
+                medical datasets, distributed tuning on AWS, and translating clinical and
+                regulatory requirements into model acceptance criteria with physicians and
+                business stakeholders.
+              </p>
+            </div>
+          </li>
+          <li class="timeline-item reveal">
+            <p class="timeline-date">May 2023 — May 2025</p>
+            <div class="timeline-body">
+              <h3>Senior AI/ML Engineer <span class="at">· Analytical AI</span></h3>
+              <p>
+                Computer vision and sensor fusion for DHS and DoD. Shipped the CBP
+                detection system behind a $25M award, led two winning Air Force SBIR
+                prototypes, optimized models for real-time edge inference, and mentored
+                junior engineers on MLOps — versioning, monitoring, CI/CD.
+              </p>
+            </div>
+          </li>
+          <li class="timeline-item reveal">
+            <p class="timeline-date">Aug 2022 — May 2023</p>
+            <div class="timeline-body">
+              <h3>Software Engineer <span class="at">· Boeing — Advanced Development &amp; Prototype Systems</span></h3>
+              <p>
+                Developed and verified mission-critical embedded algorithms for PAC-3
+                (Patriot) missile seeker systems in Ada, VHDL, and MATLAB — requirements
+                engineering, verification testing, and documentation in a safety-critical
+                defense environment.
+              </p>
+            </div>
+          </li>
+          <li class="timeline-item reveal">
+            <p class="timeline-date">Aug 2021 — Aug 2022</p>
+            <div class="timeline-body">
+              <h3>Computer Engineer III <span class="at">· Dynetics</span></h3>
+              <p>
+                VHDL development and test for satellite communications systems; contributed
+                to a hypersonic missile software program; built a Kalman-filter-based
+                control system in Python for a seeker testbed.
+              </p>
+            </div>
+          </li>
+          <li class="timeline-item reveal">
+            <p class="timeline-date">Aug 2020 — Aug 2021</p>
+            <div class="timeline-body">
+              <h3>Graduate Research Assistant <span class="at">· Mississippi State University, Sensor Lab</span></h3>
+              <p>
+                CNN segmentation models in TensorFlow/Keras for autonomous-driving
+                perception; multi-modal sensor fusion — camera, LiDAR, depth — for
+                ROS-based autonomous vehicle demonstrations.
+              </p>
+            </div>
+          </li>
+        </ol>
+
+        <p class="clearance reveal">
+          <span class="clearance-label">Clearances</span>
+          U.S. Secret (previously held — Boeing/Dynetics) · DHS (previously held — CBP contract) · eligible for reinstatement
+        </p>
+      </div>
+    </section>
+
+    <!-- ============ FEATURED PROJECT ============ -->
+    <section class="section" id="project">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow">Featured Project</p>
+          <h2>Secure Medical RAG Pipeline</h2>
+          <p class="section-lede">
+            Agentic, access-controlled, federated retrieval-augmented generation over live
+            PubMed — air-gap-capable, exposed over MCP. Hand-built, no LLM framework.
+          </p>
+        </header>
+
+        <div class="project-panel reveal">
+          <div class="project-main">
+            <ul class="project-points">
+              <li>
+                <strong>Agentic retrieval that can’t escalate itself.</strong>
+                An agentic RAG loop (Claude) over 27K live PubMed abstracts (34K chunks)
+                decomposes multi-hop questions and reformulates its own queries — with the
+                caller’s clearance bound so the agent cannot raise its own access, making
+                retrieval resistant to prompt injection from retrieved text.
+              </li>
+              <li>
+                <strong>Need-to-know enforced before the model.</strong>
+                Access control as a vector-store pre-filter — unauthorized documents never
+                reach the model — with an append-only audit log, and federated retrieval
+                across governed silos with two-level authorization and provenance-tagged,
+                distance-merged results.
+              </li>
+              <li>
+                <strong>MCP-native, air-gap-capable.</strong>
+                The access-controlled retriever is an MCP server callable from any MCP
+                client with caller clearance still enforced; a pluggable generation layer
+                swaps between the Claude API and fully local Ollama with zero code change.
+              </li>
+              <li>
+                <strong>Evaluated, not vibes-checked.</strong>
+                Hand-built chunking, retrieval, and citation over local-GPU bge-small
+                embeddings and ChromaDB; a label-free eval harness (Precision@k, nDCG@k,
+                LLM-judge faithfulness) used to reject a reranker that failed to beat the
+                bi-encoder baseline, plus a pytest suite verifying access controls hold on
+                the real index.
+              </li>
+            </ul>
+            <a class="btn btn-primary" href="https://github.com/sammcdsam/medical-rag-pipeline" target="_blank" rel="noopener">View on GitHub ↗</a>
+          </div>
+          <aside class="project-side">
+            <h4>Stack</h4>
+            <ul class="side-list">
+              <li>Python</li>
+              <li>Claude API / Ollama</li>
+              <li>ChromaDB · bge-small</li>
+              <li>MCP server</li>
+              <li>pytest</li>
+            </ul>
+            <h4>By the numbers</h4>
+            <ul class="side-list mono-list">
+              <li>27K PubMed abstracts</li>
+              <li>34K indexed chunks</li>
+              <li>0 frameworks</li>
+            </ul>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section class="section section-alt" id="skills">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow">Technical Skills</p>
+          <h2>The toolkit</h2>
+        </header>
+        <div class="skills-grid">
+          <div class="skill-group reveal">
+            <h3>AI / ML</h3>
+            <ul class="chip-list">
+              <li>PyTorch</li><li>TensorFlow / Keras</li><li>Object detection</li>
+              <li>Segmentation</li><li>Model ensembling</li><li>Anomaly detection</li>
+              <li>Sensor fusion</li><li>Transformers</li><li>Grad-CAM / RISE</li>
+            </ul>
+          </div>
+          <div class="skill-group reveal">
+            <h3>GenAI &amp; RAG</h3>
+            <ul class="chip-list">
+              <li>LLMs</li><li>Agentic systems</li><li>MCP</li><li>Embeddings</li>
+              <li>ChromaDB</li><li>LLM evaluation</li><li>Prompt-injection defense</li>
+              <li>Claude API</li><li>Ollama</li>
+            </ul>
+          </div>
+          <div class="skill-group reveal">
+            <h3>Cloud &amp; MLOps</h3>
+            <ul class="chip-list">
+              <li>AWS (EC2, S3, SageMaker)</li><li>Docker</li><li>CI/CD</li>
+              <li>Model versioning</li><li>Monitoring</li><li>FastAPI</li>
+              <li>GPU inference</li><li>Edge &amp; air-gapped deployment</li>
+            </ul>
+          </div>
+          <div class="skill-group reveal">
+            <h3>Languages &amp; Data</h3>
+            <ul class="chip-list">
+              <li>Python</li><li>C++</li><li>SQL</li><li>C</li><li>MATLAB</li>
+              <li>NumPy / Pandas</li><li>scikit-learn</li><li>OpenCV</li>
+              <li>ETL &amp; pipeline design</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EDUCATION & PUBLICATION ============ -->
+    <section class="section" id="education">
+      <div class="container edu-grid">
+        <div class="reveal">
+          <p class="eyebrow">Education</p>
+          <ul class="edu-list">
+            <li>
+              <h3>M.S., Electrical &amp; Computer Engineering</h3>
+              <p class="edu-meta">Mississippi State University · 2020 – 2022 · GPA 3.80</p>
+            </li>
+            <li>
+              <h3>B.S., Computer Engineering</h3>
+              <p class="edu-meta">Mississippi State University · 2016 – 2020 · GPA 3.83</p>
+            </li>
+          </ul>
+        </div>
+        <div class="reveal">
+          <p class="eyebrow">Publication</p>
+          <p class="pub-cite">
+            McDevitt&nbsp;S, et&nbsp;al. “Wearables for Biomechanical Performance
+            Optimization and Risk Assessment in Industrial and Sports Applications.”
+            <em>Bioengineering</em> (Basel), 2022.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section section-contact" id="contact">
+      <div class="container">
+        <p class="eyebrow reveal">Contact</p>
+        <h2 class="contact-title reveal">Building something that has to work?<br>Let’s talk.</h2>
+        <div class="hero-actions reveal">
+          <a class="btn btn-primary btn-lg" href="mailto:sam@mcdevitt.page">sam@mcdevitt.page</a>
+          <a class="btn btn-ghost btn-lg" href="assets/Sam-McDevitt-Resume.pdf" target="_blank" rel="noopener">Download resume</a>
+        </div>
+        <ul class="contact-links reveal">
+          <li><a href="https://github.com/sammcdsam" target="_blank" rel="noopener">github.com/sammcdsam</a></li>
+          <li><a href="https://linkedin.com/in/sammcdevitt" target="_blank" rel="noopener">linkedin.com/in/sammcdevitt</a></li>
+          <li>Nashville, TN</li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Sam McDevitt</p>
+      <p class="footer-note">Designed &amp; built by hand — no template.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
