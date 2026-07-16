@@ -4,12 +4,12 @@
 <meta charset="UTF-8">
 <title>Sam McDevitt — Resume</title>
 <style>
-  @page { size: letter; margin: 0.55in 0.6in; }
+  @page { size: letter; margin: 0.5in 0.6in; }
   * { box-sizing: border-box; margin: 0; padding: 0; }
   body {
     font-family: Helvetica, Arial, sans-serif;
-    font-size: 9.6pt;
-    line-height: 1.38;
+    font-size: 9.4pt;
+    line-height: 1.33;
     color: #16191D;
   }
   h1 {
@@ -144,6 +144,17 @@ CBP contract); eligible for reinstatement
   <li>Enforced need-to-know access control as a vector-store pre-filter (unauthorized documents never reach the model) with an append-only audit log; federated retrieval across governed silos with two-level authorization and provenance-tagged, distance-merged results.</li>
   <li>Exposed the access-controlled retriever as an MCP server callable from any MCP client with caller clearance still enforced; pluggable generation layer (Claude API or fully local Ollama, zero code change) for air-gapped deployment.</li>
   <li>Hand-built chunking, retrieval, and citation with no LLM framework, over local-GPU bge-small embeddings and ChromaDB; label-free eval harness (Precision@k, nDCG@k, LLM-judge faithfulness) used to reject a reranker that failed to beat the bi-encoder baseline, plus a pytest suite verifying access controls hold on the real index.</li>
+</ul>
+
+<div class="role">
+  <h3>College Baseball Predictor</h3>
+  <span class="dates">baseball.mcdevitt.page · github.com/sammcdsam/college-baseball-predictor</span>
+</div>
+<p class="proj-sub">NCAA Division I win-probability and analytics platform, live in production all season · Python</p>
+<ul>
+  <li>Stacked 12 heterogeneous models (Elo, Pythagorean, Poisson, LightGBM, XGBoost, neural, situational) with an XGBoost meta-ensemble — improved accuracy from 64.8% to 77.8% and Brier score from 0.231 to 0.155 on a 634-game replay cohort.</li>
+  <li>Engineered leak-safe ML: provenance-tagged predictions (live vs. backfill), as-of feature hygiene, and strict chronological walk-forward retraining, with a canonical benchmark harness reporting accuracy, Brier, log loss, and calibration (ECE 0.112 → 0.058).</li>
+  <li>Automated live-data ingestion from StatBroadcast, SIDEARM, and ESPN (runners, counts, live win probability) on scheduled pipelines, feeding a self-hosted Flask dashboard served through a Cloudflare Tunnel; closing-line-value tracking benchmarks every prediction against the market.</li>
 </ul>
 
 <h2>Education</h2>
