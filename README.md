@@ -24,20 +24,21 @@ python3 -m http.server 8000
 
 ## Deploy
 
-Any static host works. Two easy options:
+Live at **https://mcdevitt.page** — GitHub Pages, served from `main` (root) of
+`github.com/sammcdsam/sammcdsam.github.io`. Pushing to `main` deploys.
 
-**GitHub Pages**
+DNS (Cloudflare, DNS-only/grey-cloud): four apex `A` records to the GitHub Pages
+IPs (`185.199.108–111.153`) and `www` CNAME to `sammcdsam.github.io`. The `CNAME`
+file in the repo root pins the custom domain — don't delete it.
+
+## Resume PDF
+
+`assets/Sam-McDevitt-Resume.pdf` is generated from `resume/resume.html`:
+
 ```bash
-git init && git add -A && git commit -m "Portfolio site"
-gh repo create sammcdsam.github.io --public --source=. --push
-# → https://sammcdsam.github.io  (enable Pages: Settings → Pages → main branch)
+google-chrome --headless --disable-gpu --no-sandbox \
+  --print-to-pdf=assets/Sam-McDevitt-Resume.pdf --no-pdf-header-footer resume/resume.html
 ```
-
-**Netlify / Cloudflare Pages / Vercel** — drag-and-drop the folder or connect the
-repo; no build command, publish directory is the repo root.
-
-For the custom domain (`mcdevitt.page`), add it in your host's domain settings and
-point DNS at it.
 
 ## Editing content
 
