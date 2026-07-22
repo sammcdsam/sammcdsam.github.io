@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 — Sam McDevitt</title>
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+  <script>
+    try {
+      var t = localStorage.getItem("theme");
+      if (t) document.documentElement.setAttribute("data-theme", t);
+    } catch (e) { /* private mode */ }
+  </script>
+  <script defer src="https://analytics.mcdevitt.page/script.js" data-website-id="8c2cd474-ac23-48b2-a5eb-e8eed59ae5b8"></script>
+  <style>
+    .notfound {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      gap: 1.25rem;
+      padding: 2rem;
+    }
+    .notfound-code {
+      font-family: "IBM Plex Mono", monospace;
+      font-size: 0.95rem;
+      letter-spacing: 0.14em;
+      color: var(--accent);
+    }
+    .notfound h1 {
+      font-family: "Archivo", sans-serif;
+      font-size: clamp(2rem, 6vw, 3.25rem);
+      font-weight: 800;
+    }
+    .notfound p { max-width: 34ch; }
+  </style>
+</head>
+<body>
+  <main class="notfound">
+    <p class="notfound-code">HTTP 404 — SIGNAL LOST</p>
+    <h1>This page doesn&rsquo;t exist.</h1>
+    <p>The address may have moved or never shipped. Everything worth seeing is on the home page.</p>
+    <a class="btn btn-primary" href="/">Back to mcdevitt.page</a>
+  </main>
+</body>
+</html>
