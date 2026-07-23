@@ -64,12 +64,12 @@
 
 <h2>Summary</h2>
 <p class="summary">
-Machine learning engineer with 4+ years building and shipping production ML systems — computer vision,
-multi-modal sensor fusion, and generative AI — on a foundation of safety-critical embedded software
-engineering. Own the full lifecycle: data pipelines, model development in PyTorch/TensorFlow, evaluation,
-and deployment to AWS and edge hardware. Recent focus on LLM systems, including an agentic,
-access-controlled RAG platform served over MCP. Repeated record of shipping high-accuracy models in
-regulated environments (healthcare, DHS, DoD).
+Computer vision engineer with 4+ years building and shipping production, real-time CV and ML inference
+systems — YOLO-based detection and tracking, multi-camera video analytics, and vision-language systems —
+on a foundation of safety-critical embedded engineering. Own the full pipeline: RTSP/GStreamer video
+ingestion through YOLOv8 inference, multi-object tracking, and event generation, optimized for real-time
+edge deployment with TensorRT/ONNX and INT8 quantization on NVIDIA Jetson and GPU hardware. Repeated
+record of shipping high-accuracy CV in regulated, real-world environments (DHS/TSA, DoD, healthcare).
 </p>
 <p class="clearance">
 <b>Clearances:</b> U.S. Secret (previously held — Boeing/Dynetics) &nbsp;|&nbsp; DHS (previously held —
@@ -95,14 +95,14 @@ CBP contract); eligible for reinstatement
   <span class="dates">May 2023 – May 2025</span>
 </div>
 <ul>
+  <li>Built real-time computer-vision pipelines with YOLO / YOLOv8 for object detection and multi-object tracking — foreign-object-debris (FOD) detection, and a TSA passenger-throughput prototype that ingested live RTSP feeds from multiple IP cameras to track people across zones and measure dwell time at kiosks.</li>
+  <li>Engineered high-throughput RTSP video-ingestion pipelines (GStreamer, OpenCV) feeding YOLOv8 inference across multiple concurrent camera streams for real-time analytics.</li>
+  <li>Built a searchable-video capability: YOLO localizes objects of interest (people, vehicles) per frame and a vision-language model generates natural-language descriptions, letting operators query recorded footage by description.</li>
+  <li>Optimized detection models for real-time edge inference with TensorRT and ONNX Runtime — including INT8 quantization and calibration — and deployed on NVIDIA Jetson.</li>
   <li>Designed and deployed a production computer-vision system (detection + model ensembling) for U.S. Customs and Border Protection that scored 98.9% on the government's technical challenge — the direct basis for a $25M, 5-year production contract award.</li>
   <li>Led prototype development for two U.S. Air Force SBIR contracts ($2.5M combined); both demos secured follow-on production deployments.</li>
-  <li>Built a cloud-native AWS pipeline fusing multi-modal inputs — X-ray imagery, structured text, vehicle records — deployed for live government field trials.</li>
-  <li>Owned the full model lifecycle, proof-of-concept through production, for vehicle-region segmentation paired with anomaly classification.</li>
-  <li>Built real-time video-analytics pipelines with YOLO/YOLOv8 — object detection and multi-object tracking over live RTSP camera streams — and optimized models for edge inference with TensorRT, ONNX Runtime, and INT8 quantization on NVIDIA Jetson, alongside AWS cloud training/evaluation across camera, X-ray, and CT modalities.</li>
-  <li>Prototyped a searchable-video system pairing YOLO object detection with a vision-language model to auto-generate natural-language descriptions of people and vehicles, enabling free-text search over recorded footage.</li>
-  <li>Engineered a real-time sensor-fusion system integrating Intel depth cameras with radiation detectors for source-carrier attribution and tracking.</li>
-  <li>Built explainability into the deployment pipeline (Grad-CAM, RISE, hierarchical occlusion) to validate model behavior; implemented model versioning, monitoring, and CI/CD for production ML, and mentored junior engineers on MLOps practices.</li>
+  <li>Built FastAPI services deployed on Linux via systemd for model serving and structured edge-to-cloud event delivery, with performance monitoring for production reliability.</li>
+  <li>Engineered a real-time sensor-fusion system integrating Intel depth cameras with radiation detectors for source-carrier attribution and tracking; owned model versioning, monitoring, and CI/CD for production ML.</li>
 </ul>
 
 <div class="role">
@@ -175,10 +175,12 @@ Industrial and Sports Applications." <i>Bioengineering</i> (Basel), 2022.
 
 <h2>Technical Skills</h2>
 <div class="skills">
-  <p><b>AI/ML:</b> PyTorch, TensorFlow/Keras, computer vision (YOLO/YOLOv8 detection, multi-object tracking, segmentation, ensembling), vision-language models, anomaly detection, sensor fusion, transformers, explainable AI (Grad-CAM, RISE)</p>
-  <p><b>GenAI &amp; RAG:</b> LLMs, retrieval-augmented generation, agentic systems, MCP, embeddings &amp; vector search (ChromaDB), LLM evaluation (Precision@k, nDCG, LLM-as-judge), prompt-injection defense, Claude API, Ollama</p>
-  <p><b>Cloud &amp; MLOps:</b> AWS (EC2, S3, SageMaker), TensorRT, ONNX Runtime, NVIDIA Jetson, Docker, systemd, CI/CD, model versioning &amp; monitoring, FastAPI, GPU &amp; edge inference, air-gapped deployment</p>
-  <p><b>Languages &amp; Data:</b> Python, C++, SQL, C, MATLAB; NumPy, Pandas, scikit-learn, OpenCV, ETL &amp; data-pipeline design</p>
+  <p><b>Computer Vision &amp; Edge AI:</b> YOLO / YOLOv8 (detection + tracking), multi-object &amp; multi-camera tracking, vision-language models (VLMs), image segmentation, anomaly detection, sensor fusion, explainable AI (Grad-CAM, RISE)</p>
+  <p><b>Real-Time Inference &amp; Optimization:</b> TensorRT, ONNX Runtime, INT8 quantization &amp; calibration, NVIDIA Jetson, GPU &amp; edge inference, multi-stream throughput optimization</p>
+  <p><b>Video &amp; Streaming:</b> RTSP ingestion, GStreamer, OpenCV, live IP-camera pipelines, hardware-accelerated decode</p>
+  <p><b>Frameworks, Cloud &amp; MLOps:</b> PyTorch, TensorFlow/Keras, FastAPI, Docker, systemd, AWS (EC2, S3, SageMaker), CI/CD, model versioning &amp; monitoring</p>
+  <p><b>GenAI &amp; RAG:</b> LLMs, retrieval-augmented generation, agentic systems, MCP, embeddings &amp; vector search (ChromaDB), LLM evaluation (Precision@k, nDCG, LLM-as-judge), Claude API, Ollama</p>
+  <p><b>Languages &amp; Data:</b> Python, C++, SQL, C, MATLAB; NumPy, Pandas, scikit-learn, ETL &amp; data-pipeline design</p>
 </div>
 
 </body>
